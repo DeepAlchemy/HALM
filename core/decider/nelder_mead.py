@@ -5,7 +5,7 @@ import pandas as pd
 from pandas.core.frame import DataFrame
 import matplotlib.pyplot as plt
 
-from utils.data_processor import DataProcessor
+from utils.processor import DataProcessor
 
 
 def nelder_mead(f, x_start,

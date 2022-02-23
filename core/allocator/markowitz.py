@@ -3,7 +3,7 @@ import pandas as pd
 import scipy.optimize as sco
 
 from pandas.core.frame import DataFrame
-from utils.data_processor import DataProcessor
+from utils.processor import DataProcessor
 
 
 class MarkowitzPreprocessor(object):

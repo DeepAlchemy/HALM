@@ -32,7 +32,7 @@ class HALM:
 
     def __portfolio_decision(self):
         """
-        Optimal investment portfolio scheme based on Markowitz model
+        Optimal investment allocator scheme based on Markowitz model
         :return: weight_a, weight_b: Portfolio Weights for Product A and Product B
         """
         weight_a = 0.50

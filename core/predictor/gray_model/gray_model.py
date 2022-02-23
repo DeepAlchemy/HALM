@@ -2,8 +2,17 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
 
-from utils.data_processor import DataProcessor
+from utils.processor import DataProcessor
 from pandas.core.frame import DataFrame
+
+
+class GrayModel:
+
+    def __init__(self):
+        pass
+
+    def gm11(self):
+        return
 
 
 def GM11(x, n):
@@ -75,7 +84,6 @@ if __name__ == "__main__":
     edf["1"] = ""
     edf.columns = heads
     edf["date"] = pd.to_datetime([b[0] for b in bitcoin_data][start_days:days_number])
-
 
     g_data = np.array([b[1] for b in gold_data])
     input_g_data = g_data[0:start_days]  # 输入数据
