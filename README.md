@@ -25,8 +25,8 @@
         - [C. Use a virtual environment](#c-use-a-virtual-environment-1)
       - [2.1.2.3. Linux](#2123-linux)
         - [A. Install a virtual environment with the Python package management tool pip](#a-install-a-virtual-environment-with-the-python-package-management-tool-pip)
-        - [B.After the installation is complete, you can use the virtualenv command to create a virtual environment. You only need to specify the name of a virtual environment.](#bafter-the-installation-is-complete-you-can-use-the-virtualenv-command-to-create-a-virtual-environment-you-only-need-to-specify-the-name-of-a-virtual-environment)
-        - [C.To activate the created virtual environment, use the following command](#cto-activate-the-created-virtual-environment-use-the-following-command)
+        - [B. After the installation is complete, you can use the virtualenv command to create a virtual environment. You only need to specify the name of a virtual environment.](#bafter-the-installation-is-complete-you-can-use-the-virtualenv-command-to-create-a-virtual-environment-you-only-need-to-specify-the-name-of-a-virtual-environment)
+        - [C. To activate the created virtual environment, use the following command](#cto-activate-the-created-virtual-environment-use-the-following-command)
         - [D. To exit the virtual environment use the following command](#d-to-exit-the-virtual-environment-use-the-following-command)
     - [2.2. Install dependency python library](#22-install-dependency-python-library)
     - [2.3. How to run](#23-how-to-run)
@@ -158,13 +158,13 @@ The IDE configures the project's Python Interpreter to ~/Projects/example_projec
 sudo pip install virtualenv
 ```
 
-##### B.After the installation is complete, you can use the virtualenv command to create a virtual environment. You only need to specify the name of a virtual environment.
+##### B. After the installation is complete, you can use the virtualenv command to create a virtual environment. You only need to specify the name of a virtual environment.
 
 ```bash
 virtualenv venv
 ```
 
-##### C.To activate the created virtual environment, use the following command
+##### C. To activate the created virtual environment, use the following command
 
 ```bash
 source venv/bin/activate
