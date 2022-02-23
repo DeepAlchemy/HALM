@@ -1,3 +1,6 @@
+import json
+
+
 class HALM:
     """ HALM Model """
 
@@ -40,11 +43,16 @@ class HALM:
         return weight_a, weight_b
 
     def halm_decision(self):
+        """
+        Portfolio investment decision method based on HALM model
+        :return: Portfolio investment decision strategy of HALM model
+        """
         portfolio = {"product_a": 0.0, "product_b": 0.0}
         n_price_a, n_price_b = self.__price_forecast()
         rf_a, rf_b = self.__risk_assessment()
         weight_a, weight_b = self.__portfolio_decision()
-        print("The next trading day's price: Product A——{} dollar, Product B——{} dollar".format(n_price_a, n_price_b))
-        print("Risk factor: Product A——{}, Product B——{}".format(rf_a, rf_b))
-        print("Portfolio Weight: Product A——{}, Product B——{}".format(weight_a * 100, weight_b * 100))
+        print("The next trading day's prices ===> Product A: {} dollar, Product B: {} dollar".format(n_price_a, n_price_b))
+        print("Risk factors ===> Product A: {}, Product B: {}".format(rf_a, rf_b))
+        print("Portfolio Weights ===> Product A: {}, Product B: {}".format(weight_a * 100, weight_b * 100))
+        print("The decision of HALM model ===> {}".format(json.dumps(portfolio)))
         return portfolio
