@@ -5,6 +5,32 @@
 ![](https://img.shields.io/badge/institution-King's_College_London-red.svg)
 ![](https://img.shields.io/badge/Authors-WY_Chen,_JW_Wang,_YY_Wang-orange.svg)
 
+- [HALM: A Highly Adaptive Learning Model for Portfolio Decision Making](#halm-a-highly-adaptive-learning-model-for-portfolio-decision-making)
+  - [1. Introduction](#1-introduction)
+    - [1.1. Background](#11-background)
+    - [1.2. Overall Architecture](#12-overall-architecture)
+    - [1.3. HALM](#13-halm)
+    - [1.4. Decision-making Effect on 09/10/2021](#14-decision-making-effect-on-09102021)
+  - [2. Tutorial](#2-tutorial)
+    - [2.1. Environment Preparation](#21-environment-preparation)
+      - [2.1.1 Suggestion](#211-suggestion)
+      - [2.1.2 Install Python](#212-install-python)
+      - [2.1.2.1. Windows environment](#2121-windows-environment)
+        - [A. Installation](#a-installation)
+        - [B. Create a virtual environment](#b-create-a-virtual-environment)
+        - [C. Use a virtual environment](#c-use-a-virtual-environment)
+      - [2.1.2.2. MacOS](#2122-macos)
+        - [A. Installation](#a-installation-1)
+        - [B. Create a virtual environment](#b-create-a-virtual-environment-1)
+        - [C. Use a virtual environment](#c-use-a-virtual-environment-1)
+      - [2.1.2.3. Linux](#2123-linux)
+        - [A. Install a virtual environment with the Python package management tool pip](#a-install-a-virtual-environment-with-the-python-package-management-tool-pip)
+        - [B.After the installation is complete, you can use the virtualenv command to create a virtual environment. You only need to specify the name of a virtual environment.](#bafter-the-installation-is-complete-you-can-use-the-virtualenv-command-to-create-a-virtual-environment-you-only-need-to-specify-the-name-of-a-virtual-environment)
+        - [C.To activate the created virtual environment, use the following command](#cto-activate-the-created-virtual-environment-use-the-following-command)
+        - [D. To exit the virtual environment use the following command](#d-to-exit-the-virtual-environment-use-the-following-command)
+    - [2.2. Install dependency python library](#22-install-dependency-python-library)
+    - [2.3. How to run](#23-how-to-run)
+
 ## 1. Introduction
 
 ### 1.1. Background
