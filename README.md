@@ -5,8 +5,6 @@
 ![](https://img.shields.io/badge/institution-King's_College_London-red.svg)
 ![](https://img.shields.io/badge/Authors-WY_Chen,_JW_Wang,_YY_Wang-orange.svg)
 
----
-
 ## 1. Introduction
 
 ### 1.1. Background
@@ -19,17 +17,17 @@ There are two main problems in the existing portfolio decision-making process as
 
 ### 1.2. Overall Architecture
 
-![](pictures/pic1.png)
+![](resources/pictures/pic1.png)
 
 ### 1.3. HALM
 
 The overall workflow of the HALM model is shown below. 
 
-![](pictures/pic2.png)
+![](resources/pictures/pic2.png)
 
 ### 1.4. Decision-making Effect on 09/10/2021
 
-![](pictures/pic3.png)
+![](resources/pictures/pic3.png)
 
 **Initial Funding:** $1000.00
 
@@ -159,5 +157,11 @@ pip install -r requirements.txt
 ```
 
 ### 2.3. How to run
+```python
+from halm import HALM
 
-Please look forward to it.
+a = 1000.44
+b = 564.11
+h_ab = [{"2020-11-01": [852.59, 485.44]}, {"2020-11-02": [891.38, 933.66]}, {"2020-11-03": [977.14, 996.52]}]
+portfolio = HALM(price_a=a, price_b=b, historical_prices=h_ab).halm_decision()
+```

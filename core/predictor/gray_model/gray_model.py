@@ -45,7 +45,7 @@ def GM11(x, n):
         'b': {'value': b, 'desc': '灰色作用量'},
         'predicted': {'value': result, 'desc': '第%d个预测值' % n},
         'C': {'value': C, 'desc': assess},
-        'predict': {'value': predict, 'desc': '往后预测%d个的序列' % (n)},
+        'predictor': {'value': predict, 'desc': '往后预测%d个的序列' % (n)},
     }
 
 
@@ -62,7 +62,7 @@ if __name__ == "__main__":
     input_b_data = b_data[0:start_days]  # 输入数据
     true_b_data = b_data[start_days:days_number]  # 需要预测的数据
     result = GM11(input_b_data, len(true_b_data))
-    predict_b_data = result['predict']['value']
+    predict_b_data = result['predictor']['value']
     predict_b_data = np.round(predict_b_data, 1)
     errors = [abs((true_b_data[i] - predict_b_data[i]) / predict_b_data[i]) for i in range(len(true_b_data))]
 
@@ -81,7 +81,7 @@ if __name__ == "__main__":
     input_g_data = g_data[0:start_days]  # 输入数据
     true_g_data = g_data[start_days:days_number]  # 需要预测的数据
     result = GM11(input_g_data, len(true_g_data))
-    predict_g_data = result['predict']['value']
+    predict_g_data = result['predictor']['value']
     predict_g_data = np.round(predict_g_data, 1)
     errors = [abs((true_g_data[i] - predict_g_data[i]) / predict_g_data[i]) for i in range(len(true_g_data))]
 
@@ -102,16 +102,16 @@ if __name__ == "__main__":
     plt.legend()
     plt.show()
 
-    # heads = ["true", "predict", "date"]
+    # heads = ["true", "predictor", "date"]
     # rdf = DataFrame(true_b_data)
     # rdf["1"] = ""
     # rdf["2"] = ""
     # rdf.columns = heads
-    # rdf["predict"] = predict_b_data
+    # rdf["predictor"] = predict_b_data
     # rdf["date"] = pd.to_datetime([b[0] for b in bitcoin_data][3:])
     # plt.figure(figsize=(20, 8))
     # plt.plot(rdf["date"], rdf.true, color="orange", label="Gold True Price")
-    # plt.plot(rdf["date"], rdf.predict, color="gray", label="Gold Predict Price")
+    # plt.plot(rdf["date"], rdf.predictor, color="gray", label="Gold Predict Price")
     # plt.show()
 
     # print(result)

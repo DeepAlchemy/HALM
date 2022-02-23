@@ -4,7 +4,6 @@ import scipy.optimize as sco
 
 from pandas.core.frame import DataFrame
 from utils.data_processor import DataProcessor
-from utils.common import separate
 
 
 class MarkowitzPreprocessor(object):
@@ -69,29 +68,23 @@ class Markowitz:
         df.index = [item[0] for item in b_data]
         print("合并后的数据列表: ")
         print(df)
-        separate()
 
         returns = np.log(df / df.shift(1))  # 计算投资资产的协方差是构建资产组合过程的核心部分
         length = len(df)
         print("投资资产的协方差列表: ")
         print(returns)
-        separate()
 
         print("每日收益平均值: ")
         print(returns.mean())
-        separate()
 
         print("年化收益: ")
         print(returns.mean() * length)
-        separate()
 
         print("相关系数: ")
         print(returns.corr())
-        separate()
 
         print("协方差: ")
         print(returns.cov() * length)
-        separate()
 
         returns.hist(bins=10, figsize=(9, 6))
 

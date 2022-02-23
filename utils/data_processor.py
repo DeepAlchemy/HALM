@@ -42,7 +42,7 @@ class DataProcessor(object):
                         new_arr.append([day, temp[1]])
             else:
                 new_arr.append([day, 0])
-        with open("../data/NEW-LBMA-GOLD.csv", "w", newline="") as gold_file:
+        with open("../resources/data/NEW-LBMA-GOLD.csv", "w", newline="") as gold_file:
             writer = csv.writer(gold_file)
             writer.writerows(new_arr)
 
@@ -66,7 +66,7 @@ class DataProcessor(object):
                     day = "{}/{}/{}".format(int(date_item[1]), int(date_item[2]), int(date_item[0][2:]))
                     new_arr.append([day, item[1]])
 
-        with open("../data/NEW-LBMA-GOLD-PLUS.csv", "w", newline="") as gold_file:
+        with open("../resources/data/NEW-LBMA-GOLD-PLUS.csv", "w", newline="") as gold_file:
             writer = csv.writer(gold_file)
             writer.writerows(new_arr)
 

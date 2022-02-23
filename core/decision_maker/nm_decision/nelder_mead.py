@@ -6,7 +6,6 @@ from pandas.core.frame import DataFrame
 import matplotlib.pyplot as plt
 
 from utils.data_processor import DataProcessor
-from utils.common import separate
 
 
 def nelder_mead(f, x_start,
@@ -210,7 +209,6 @@ if __name__ == "__main__":
             return -decision.computer_action_reward(x, 1, PB0, PB[i + 1], PG0, PG[i + 1], P, cost_g, cost_b, POFO0)
 
 
-        separate()
         print("Today gold: ", PG0, "Today BTC: ", PB0)
         print("Next day gold: ", PG[i + 1], "Next day BTC: ", PB[i + 1])
         # print()

@@ -60,8 +60,8 @@ def create_dataset(data, days_for_train=5) -> (np.array, np.array):
 
 if __name__ == '__main__':
 
-    bitcoin_path = "../data/BCHAIN-MKPRU.csv"
-    gold_path = "../data/LBMA-GOLD.csv"
+    bitcoin_path = "../../../resources/data/BCHAIN-MKPRU.csv"
+    gold_path = "../../../resources/data/LBMA-GOLD.csv"
     bitcoin = True
     gold = False
 

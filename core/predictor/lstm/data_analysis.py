@@ -25,6 +25,6 @@ class DataAnalysis:
 
 
 if __name__ == '__main__':
-    bitcoin_path = '../data/BCHAIN-MKPRU.csv'
-    gold_path = '../data/LBMA-GOLD.csv'
+    bitcoin_path = '../../../resources/data/BCHAIN-MKPRU.csv'
+    gold_path = '../../../resources/data/LBMA-GOLD.csv'
     DataAnalysis.data_visualize(bitcoin_path, gold_path)
