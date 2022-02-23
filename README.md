@@ -1,4 +1,4 @@
-# HALM: A Highly Adaptive Learning Model for Portfolio Decision Making
+# HALM: A Highly Adaptive Learning Model for Quantitive Trading
 
 ![](https://img.shields.io/badge/language-python_3.8-blue.svg)
 ![](https://img.shields.io/badge/license-Apache_2.0-green.svg)
